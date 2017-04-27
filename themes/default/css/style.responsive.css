@@ -86,7 +86,7 @@
         border-top-left-radius:0;
         border-top-right-radius:0;
         border-bottom-right-radius:10px;
-        padding-left:10px
+        
     }
     #menusite .navbar-default .navbar-nav > li {
         margin-left:0 !important;
@@ -108,7 +108,7 @@
     #menusite .navbar-default .navbar-nav > .open > a:hover,
     #menusite .navbar-default .navbar-nav > .open > a:focus {
         background:linear-gradient(to bottom,#b80002 0%,#b80002 100%) !important;
-        color:#ffffff !important;
+        color:#fec502 !important;
     }
     #menusite .navbar-default .navbar-nav > .active > a,
     #menusite .navbar-default .navbar-nav > .active > a:hover,
