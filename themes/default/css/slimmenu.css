@@ -1,0 +1,332 @@
+ul.slimmenu {
+	background:#b80002;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	border-bottom: 10px solid #fff;
+}
+
+
+ul.slimmenu li {
+	position: relative;
+	display: inline-block;
+	text-align: left;
+}
+
+.menu-collapser {
+	position: absolute;
+	top: -19px;
+	right: 0px;
+	background: transparent;
+	color: #FFF;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	font-size: 16px;
+	padding: 0;
+}
+.collapse-button {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 44px;
+	background-repeat: repeat-x;
+	background-color: #8e0102;
+	border-style: solid;
+	border-width: 1px;
+	color: #FFFFFF;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.075);
+	padding: 7px 10px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	font-size: 14px;
+	text-align: center;
+	transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box
+}
+.collapse-button:hover, .collapse-button:focus {
+	background-image: none;
+	background-color: #8e0102;
+	color: #FFF;
+}
+.collapse-button .icon-bar {
+	background-color: #F5F5F5;
+	border-radius: 0px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	display: block;
+	height: 3px;
+	width: 22px;
+	margin: 3px 0;
+}
+
+ul.slimmenu li a {
+	padding: 8px 14px 7px;
+}
+ul.slimmenu li ul li a, ul.slimmenu.collapsed li a {
+	padding: 15px;
+}
+
+ul.slimmenu.collapsed {
+	z-index: 3
+}
+ul.slimmenu.collapsed li a {
+	display: block;
+	min-width: 200px
+}
+ul.slimmenu.collapsed li ul li {
+	padding: 0px;
+	clear: both;
+}
+ul.slimmenu.collapsed li ul li a i {
+	padding: 0px 5px;
+}
+
+ul.slimmenu > li {
+	margin-right: -5px;
+}
+ul.slimmenu > li:first-child {
+	border-left: 0;
+	background: none;
+}
+ul.slimmenu > li:last-child {
+	margin-right: 0
+}
+ul.slimmenu > li > a {
+	display: block;
+	color: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	background: none;
+	border-right: 1px solid #f68e92;
+	/*margin: 13px 0px;*/
+}
+ul.slimmenu > li:last-child > a {
+	border-right: 0px solid #8e0102;
+}
+ul.slimmenu li a:hover, ul.slimmenu li a:focus, ul.slimmenu li.current a {
+	/*background: #c24873;*/
+	text-decoration: none;
+}
+ul.slimmenu li:hover, ul.slimmenu li:focus, ul.slimmenu li.current{
+	background: #8e0102;
+	color: #FFFFFF;
+}
+
+ul.slimmenu li .sub-collapser {
+	background: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 28px;
+	height: 100%;
+	text-align: center;
+	z-index: 999;
+	cursor: pointer;
+	display: none;
+}
+ul.slimmenu li .sub-collapser:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em;
+}
+ul.slimmenu li .sub-collapser > i {
+	color: #FFFFFF;
+	font-size: 9px;
+	display: inline-block;
+	vertical-align: middle;
+}
+ul.slimmenu li ul li .sub-collapser > i {
+	color: #333;
+}
+ul.slimmenu.collapsed li .sub-collapser > i {
+	vertical-align: top;
+	margin-top: 14px;
+	font-style: normal;
+}
+
+ul.slimmenu.collapsed li  .sub-collapser > i {
+	vertical-align: top;
+	margin-top: 14px;
+}
+
+ul.slimmenu li ul {
+	margin: 0;
+	list-style-type: none;
+}
+ul.slimmenu li ul li:hover, ul.slimmenu li ul li:focus, ul.slimmenu li ul li.current{
+	background: transparent;
+}
+ul.slimmenu li ul li {
+	display: block;
+	padding: 0px 20px ;
+	text-align: left;
+	z-index: 1000;
+	clear: both;
+	background: none;
+}
+ul.slimmenu li ul li a {
+	clear: both;
+	display: block;
+	font-weight: normal;
+	line-height: 16px;
+	white-space: nowrap;
+	background:none !important;
+	background-color: #FFFFFF;
+	border-bottom:1px solid #ddd;
+}
+ul.slimmenu li ul li:last-child a {
+	border-bottom:0px solid #ddd;
+}
+ul.slimmenu li ul li a:hover, ul.slimmenu li ul li a:focus {
+	background:none !important;
+	background-color: #ffffff;
+	line-height: 16px;
+	color: #a94442;
+	text-decoration: none;
+}
+
+ul.slimmenu li > ul {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	z-index: 999;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+	min-width: 200px;
+	background: #ffffff;
+}
+ul.slimmenu li > ul > li ul {
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+}
+
+ul.slimmenu.collapsed li {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box
+}
+ul.slimmenu.collapsed li a {
+	display: block;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box
+}
+ul.slimmenu.collapsed li > ul {
+	display: none;
+	position: static;
+}
+@media (max-width: 768px) {
+	ul.slimmenu li > ul {
+		border-radius: 0px;
+		box-shadow: none;
+		border: none;
+		background: transparent;
+		color: #FFFFFF;
+	}
+	ul.slimmenu li > ul > li > a{
+		line-height: 17px;
+		color: #FFFFFF;
+	}
+	ul.slimmenu:before{
+		content: "";
+		background: transparent;
+	    width: 0;
+	    height: 0;
+	    position: relative;
+	    left: 0;
+	    z-index: 1;
+	}
+	ul.slimmenu:after{
+		content: "";
+		background: transparent;
+	    width: 0;
+	    height: 0;
+	    position: relative;
+	    right: 0;
+	    z-index: 1;
+	}
+	ul.slimmenu li a:hover, ul.slimmenu li a:focus, ul.slimmenu li.current a{
+		line-height: normal;
+		color: #FFFFFF;
+	}
+	ul.slimmenu li ul li a:hover, ul.slimmenu li ul li a:focus{
+		color: #FFFFFF;
+	}
+	ul.slimmenu > li > a{
+		line-height: 17px;
+		margin: 0px;
+	}
+	ul.slimmenu > li > ul > li > a{
+		line-height: 16px;
+	}
+	ul.slimmenu > li:last-child > a{
+		border-right: 1px solid #f68e92;
+	}
+}
+@media (max-width: 800px) {
+	ul.slimmenu li a {
+	    padding: 15px 15px;
+	}
+}
+@media (min-width: 992px) {
+	nav > .container > .row {
+		margin-left: -5px !important;
+		margin-right: -5px !important;
+	}
+}
+@media (max-width: 320px) {
+	ul.slimmenu li a:hover, ul.slimmenu li a:focus, ul.slimmenu li.current a {
+		border-top-left-radius: 0px !important;
+		border-top-right-radius: 0px !important;
+		line-height: 22px !important;
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+}
+@media (max-width: 360px) {
+	ul.slimmenu li a:hover, ul.slimmenu li a:focus, ul.slimmenu li.current a {
+		border-top-left-radius: 0px !important;
+		border-top-right-radius: 0px !important;
+		line-height: 22px !important;
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+}
+@media (max-width: 480px) {
+	ul.slimmenu li a:hover, ul.slimmenu li a:focus, ul.slimmenu li.current a {
+		border-top-left-radius: 0px !important;
+		border-top-right-radius: 0px !important;
+		line-height: 22px !important;
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+}
+@media (max-width: 600px) {
+	ul.slimmenu li a:hover, ul.slimmenu li a:focus, ul.slimmenu li.current a {
+		border-top-left-radius: 0px !important;
+		border-top-right-radius: 0px !important;
+		line-height: 22px !important;
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+}

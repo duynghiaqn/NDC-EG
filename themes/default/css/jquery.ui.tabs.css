@@ -1,0 +1,81 @@
+.ui-tabs {
+	position: relative;
+    padding: 0px 10px 0px 5px;
+    margin-top: 5px !important;
+    z-index: 100;
+    background: #FFFFFF;
+}
+
+.ui-tabs .ui-tabs-nav {
+	margin: 0;
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+}
+
+.ui-tabs .ui-tabs-nav li {
+	background: #f3f3f3;
+	color: #333333;
+	width: 50%;
+    font-size: 14px;
+    border-bottom: 0 !important;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+	text-transform: uppercase;
+    float: left;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+	color: #333333;
+	font-weight: bold;
+	text-transform:uppercase;
+	text-align:center;
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: 0;
+	width: 49%;
+    background: #b80002;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+	background: #b80002;
+	color: #fff;
+	display: block;
+	float: left;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a span {
+	float: left;
+	height: 18px;
+	padding: 0 0 0 4px
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a span span {
+	padding: 0 4px 0 0
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+	cursor: text
+}
+
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+	cursor: pointer
+}
+
+.ui-tabs .ui-tabs-panel {
+	border-width: 0;
+	display: block;
+	margin-top: 15px;
+}
+
+.ui-tabs .ui-tabs-hide {
+	display: none !important
+}
