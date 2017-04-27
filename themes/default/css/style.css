@@ -2379,3 +2379,28 @@ img.egov_news_cat_img,.img-home {width:100%;height:150px;}
 
 .egov-footer a{ color:#b80002 }
 .egov-footer h4{ font-weight: 600;    font-size: 12px; }
+/* Back to top */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #b80002;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: #fec502;
+}
+#back-to-top.show {
+    opacity: 1;
+}
