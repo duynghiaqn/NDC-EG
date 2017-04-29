@@ -976,7 +976,7 @@ a.btn {
 
 /* SECOND NAV */
 .second-nav{
-    z-index:3
+    z-index:9999;
 }
 .second-nav .bg {
     background:#cccccc;
