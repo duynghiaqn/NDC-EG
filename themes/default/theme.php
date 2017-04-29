@@ -161,6 +161,15 @@ function nv_site_theme($contents, $full = true)
     $xtpl->assign('LOGO_SRC', NV_BASE_SITEURL . $logo);
     $xtpl->assign('LOGO_WIDTH', $size[0]);
     $xtpl->assign('LOGO_HEIGHT', $size[1]);
+    // Banner site
+	$xtpl->assign('SITE_NAME', $global_config['site_name']);
+	$xtpl->assign('THEME_SITE_HREF', NV_BASE_SITEURL . 'index.php?' . NV_LANG_VARIABLE . '=' . NV_LANG_DATA); 
+	$banner_size = @getimagesize(NV_ROOTDIR . '/' . $global_config['site_banner']);
+	$banner = preg_replace('/\.[a-z]+$/i', '.svg', $global_config['site_banner']);
+	if (! file_exists(NV_ROOTDIR . '/' . $banner)) {$banner = $global_config['site_banner'];}
+	$xtpl->assign('BANNER_SRC', NV_BASE_SITEURL . $banner);
+	$xtpl->assign('BANNER_WIDTH', $banner_size[0]);
+	$xtpl->assign('BANNER_HEIGHT', $banner_size[1]);
 
     if (isset($size['mime']) and $size['mime'] == 'application/x-shockwave-flash') {
         $xtpl->parse('main.swf');
