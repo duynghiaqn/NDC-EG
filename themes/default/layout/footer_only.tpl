@@ -5,7 +5,11 @@
         <div id="openidResult" class="nv-alert" style="display:none"></div>
         <div id="openidBt" data-result="" data-redirect=""></div>
         <script src="{NV_BASE_SITEURL}themes/{TEMPLATE}/js/bootstrap.min.js"></script>
-		<script src="{NV_BASE_SITEURL}themes/{TEMPLATE}/js/ontop.js"></script>
-		<a href="#" id="back-to-top" title="{LANG.back_on_top}">&uarr;</a>
+	<script src="{NV_BASE_SITEURL}themes/{TEMPLATE}/js/ontop.js"></script>
+	<script src="{NV_BASE_SITEURL}themes/{TEMPLATE}/js/wow.min.js"></script>
+	<script>
+	new WOW().init();
+	</script> 
+	<a href="#" id="back-to-top" title="{LANG.back_on_top}"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 	</body>
 </html>
